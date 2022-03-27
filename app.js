@@ -15,7 +15,7 @@ let options ={
 };
 let day = new Date().toLocaleDateString('en-US',options);
 
-let items = ["Eat","Sleep"];
+let items = ["Eat Breakfast","Study"];
 
 app.get('/',(req,res)=>{
     res.render('list',{day: day,items: items});
